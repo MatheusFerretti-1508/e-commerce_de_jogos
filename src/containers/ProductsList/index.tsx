@@ -44,7 +44,7 @@ const ProductsList = ({ background, title, games, id, isLoading }: Props) => {
                     {games &&
                         games.map((game) => (
                             <li key={game.id}>
-                                <Product
+                                <Product 
                                     id={game.id}
                                     category={game.details.category}
                                     description={game.description}

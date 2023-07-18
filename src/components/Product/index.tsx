@@ -2,7 +2,7 @@ import Tag from '../Tag'
 
 import * as S from './styles'
 
-type Props = {
+export type Props = {
     title: string
     category: string
     system: string
@@ -19,7 +19,7 @@ const Product = ({
     description,
     infos,
     image,
-    id
+    id,
 }: Props) => {
     const getDescription = (text: string) => {
         if (text.length > 95) {
